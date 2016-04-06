@@ -1,24 +1,16 @@
-<form method="post" action="index.php?r=pemohon/permohonan/simpan">
+<form method="post" action="index.php?r=admin/semak/simpan">
+    <input type="hidden" name="id_mohon" value="<?=$p->id_mohon?>">
     <div>
-        <div class="alert alert-danger">
-            <b>ARAHAN</b>
-            <ul>
-                <li>Lengkapkan borang dengan betul</li>
-                <li>Maklumat yang lengkap sahaja akan diproses</li>
-                <li>Permohonan yang baru dihantar akan membatalkan permohonan terdahulu</li>
-            </ul>
-        </div>
-
         <div>
             <legend>BUTIRAN PERIBADI</legend>
             <table class="table">
                 <tr>
                     <td width="20%">1. Kad Pengenalan</td>
-                    <td>: <input type="text" value="740412095063" name="noic" class=""></td>
+                    <td>: <input type="text" value="<?=$p->noic?>" name="noic" class=""></td>
                 </tr>
                 <tr>
                     <td>2. Nama Penuh Pemohon</td>
-                    <td>: <input type="text" name="nama" value="Azman bin Zakaria" class=""></td>
+                    <td>: <input type="text" name="nama" value="<?=$p->nama?>" class=""></td>
                 </tr>
                 <tr>
                     <td>3. Jantina</td>
